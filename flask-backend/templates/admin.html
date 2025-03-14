@@ -9,39 +9,33 @@
 <body>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-md-12">
-                <h1>Admin Dashboard</h1>
-                <a href="{{ url_for('logout') }}" class="btn btn-danger mb-3">Logout</a>
-                <a href="{{ url_for('create_user') }}" class="btn btn-success mb-3">Create User</a>
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>Admin Dashboard</h1>
+                    <div>
+                        <a href="{{ url_for('logout') }}" class="btn btn-danger mb-3">Logout</a>
+                        <a href="{{ url_for('create_user') }}" class="btn btn-success mb-3">Create User</a>
+                    </div>
+                </div>
                 <h2>Applications</h2>
                 <table class="table table-striped">
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Phone</th>
-                            <th>Position</th>
-                            <th>Experience</th>
-                            <th>Location</th>
-                            <th>Languages</th>
-                            <th>Skills</th>
-                            <th>Salary</th>
-                            <th>Start Date</th>
+                            <th>Details</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for application in applications %}
                         <tr>
+                            <td>{{ application.id }}</td>
                             <td>{{ application.name }}</td>
                             <td>{{ application.email }}</td>
                             <td>{{ application.phone }}</td>
-                            <td>{{ application.position }}</td>
-                            <td>{{ application.experience }}</td>
-                            <td>{{ application.location }}</td>
-                            <td>{{ application.languages }}</td>
-                            <td>{{ application.skills }}</td>
-                            <td>{{ application.salary }}</td>
-                            <td>{{ application.start_date }}</td>
+                            <td><a href="{{ url_for('application_details', application_id=application.id) }}">Details</a></td>
                         </tr>
                         {% endfor %}
                     </tbody>

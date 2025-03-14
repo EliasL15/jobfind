@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>Application Details</h1>
+                    <a href="{{ url_for('admin') }}" class="btn btn-primary mb-3">Back to Admin</a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item"><strong>Application ID:</strong> <span class="text-muted">{{ application.id }}</span></li>
+                            <li class="list-group-item"><strong>Name:</strong> <span class="text-muted">{{ application.name }}</span></li>
+                            <li class="list-group-item"><strong>Email:</strong> <span class="text-muted">{{ application.email }}</span></li>
+                            <li class="list-group-item"><strong>Phone:</strong> <span class="text-muted">{{ application.phone }}</span></li>
+                        </ul>
+                        <h2>Submitted Information</h2>
+                        <ul class="list-group">
+                            {% for question, answer in application.data.items() %}
+                            <li class="list-group-item">
+                                <strong>{{ question }}:</strong> {{ answer }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -9,40 +9,32 @@
 <body>
   <div class="container">
     <div class="row mt-5">
-      <div class="col-md-12">
-        <h1>User Dashboard</h1>
-        <a href="{{ url_for('logout') }}" class="btn btn-danger mb-3">Logout</a>
+      <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1>User Dashboard</h1>
+          <a href="{{ url_for('logout') }}" class="btn btn-danger mb-3">Logout</a>
+        </div>
         <h2>Applications</h2>
         <table class="table table-striped">
           <thead>
-              <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Phone</th>
-                  <th>Position</th>
-                  <th>Experience</th>
-                  <th>Location</th>
-                  <th>Languages</th>
-                  <th>Skills</th>
-                  <th>Salary</th>
-                  <th>Start Date</th>
-              </tr>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Details</th>
+            </tr>
           </thead>
           <tbody>
-              {% for application in applications %}
-              <tr>
-                  <td>{{ application.name }}</td>
-                  <td>{{ application.email }}</td>
-                  <td>{{ application.phone }}</td>
-                  <td>{{ application.position }}</td>
-                  <td>{{ application.experience }}</td>
-                  <td>{{ application.location }}</td>
-                  <td>{{ application.languages }}</td>
-                  <td>{{ application.skills }}</td>
-                  <td>{{ application.salary }}</td>
-                  <td>{{ application.start_date }}</td>
-              </tr>
-              {% endfor %}
+            {% for application in applications %}
+            <tr>
+                <td>{{ application.id }}</td>
+                <td>{{ application.name }}</td>
+                <td>{{ application.email }}</td>
+                <td>{{ application.phone }}</td>
+                <td><a href="{{ url_for('application_details', application_id=application.id) }}">Details</a></td>
+            </tr>
+            {% endfor %}
           </tbody>
         </table>
       </div>

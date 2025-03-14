@@ -16,19 +16,20 @@ const JobForm = ({ language, translations, formData, onInputChange, onBackToHome
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Construct the payload based on your backend's expected keys
+    // Construct the payload with all questions in English mapped to their raw responses
+    const form_data = translations['en'].questions.reduce((acc, question, index) => {
+      acc[question] = formData[index];
+      return acc;
+    }, {});
+
+    // Include name, email, and phone in the data dictionary
     const data = {
-      name: formData[0],
-      email: formData[1],
-      phone: formData[2],
-      position: formData[3],
-      experience: formData[4],
-      location: formData[5],
-      languages: formData[6],
-      skills: formData[7],
-      salary: formData[8],
-      start_date: formData[9]
+      Name: formData[0],
+      Email: formData[1],
+      Phone: formData[2],
+      Data: form_data
     };
+
 
     try {
       const response = await fetch('/submit', {

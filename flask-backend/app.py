@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from sqlalchemy import JSON
 
 app = Flask(__name__, static_folder='../dist', static_url_path='/')
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -23,13 +24,7 @@ class Application(db.Model):
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False)
     phone = db.Column(db.String(20), nullable=False)
-    position = db.Column(db.String(100), nullable=False)
-    experience = db.Column(db.Text, nullable=False)
-    location = db.Column(db.String(100), nullable=False)
-    languages = db.Column(db.String(100), nullable=False)
-    skills = db.Column(db.Text, nullable=False)
-    salary = db.Column(db.String(20), nullable=False)
-    start_date = db.Column(db.String(20), nullable=False)
+    data = db.Column(JSON, nullable=False)
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -99,16 +94,10 @@ def dashboard():
 def submit():
     data = request.json
     application = Application(
-        name=data['name'],
-        email=data['email'],
-        phone=data['phone'],
-        position=data['position'],
-        experience=data['experience'],
-        location=data['location'],
-        languages=data['languages'],
-        skills=data['skills'],
-        salary=data['salary'],
-        start_date=data['start_date']
+        name=data['Name'],
+        email=data['Email'],
+        phone=data['Phone'],
+        data=data['Data']  # Store the rest of the data in JSON format
     )
     db.session.add(application)
     db.session.commit()
@@ -121,6 +110,12 @@ def serve(path):
         return send_from_directory(app.static_folder, path)
     else:
         return send_from_directory(app.static_folder, 'index.html')
+    
+@app.route('/application/<int:application_id>')
+@login_required
+def application_details(application_id):
+    application = Application.query.get_or_404(application_id)
+    return render_template('details.html', application=application)
 
 def create_initial_admin():
     admin = User.query.filter_by(username='admin').first()
