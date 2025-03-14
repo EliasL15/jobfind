@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1>Admin Dashboard</h1>
+                <a href="{{ url_for('logout') }}" class="btn btn-danger mb-3">Logout</a>
+                <a href="{{ url_for('create_user') }}" class="btn btn-success mb-3">Create User</a>
+                <h2>Applications</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Position</th>
+                            <th>Experience</th>
+                            <th>Location</th>
+                            <th>Languages</th>
+                            <th>Skills</th>
+                            <th>Salary</th>
+                            <th>Start Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for application in applications %}
+                        <tr>
+                            <td>{{ application.name }}</td>
+                            <td>{{ application.email }}</td>
+                            <td>{{ application.phone }}</td>
+                            <td>{{ application.position }}</td>
+                            <td>{{ application.experience }}</td>
+                            <td>{{ application.location }}</td>
+                            <td>{{ application.languages }}</td>
+                            <td>{{ application.skills }}</td>
+                            <td>{{ application.salary }}</td>
+                            <td>{{ application.start_date }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
