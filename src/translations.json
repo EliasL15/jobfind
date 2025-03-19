@@ -27,7 +27,44 @@
     "redirectMessage": "Redirecting to home page in {countdown}...",
     "submissionFailed": "Submission Failed",
     "submissionFailedMessage": "Failed to submit application. Please try again.",
-    "tryAgain": "Try Again"
+    "tryAgain": "Try Again",
+    "benefits": "Benefits",
+    "benefitsDesc": "Competitive salary and comprehensive benefits package.",
+    "flexibility": "Flexibility",
+    "flexibilityDesc": "Flexible work hours and remote work options.",
+    "growth": "Growth",
+    "growthDesc": "Career advancement opportunities and professional development.",
+    "mission": "Our Mission",
+    "missionDesc": "We connect talented professionals with companies that value their skills and expertise.",
+    "team": "Our Team",
+    "teamDesc": "Our experienced team of recruitment specialists is dedicated to finding the perfect match for both employers and job seekers.",
+    "presence": "Our Presence",
+    "presenceDesc": "With offices across Cyprus and partnerships with leading companies, we offer unparalleled access to job opportunities.",
+    "aboutUs": "About Us",
+    "aboutExtraInfo": "Founded in 2020, our platform has helped thousands of professionals find their dream jobs in various industries. We pride ourselves on personalized service, understanding both employer needs and candidate aspirations.",
+    "whyChooseUs": "Why Choose Us",
+    "whyChooseDesc": "We are committed to providing the best job search experience, with a focus on quality, efficiency, and personalized support.",
+    "joinThousands": "Join Thousands of Success Stories",
+    "joinThousandsDesc": "Your dream career is just one click away",
+    "startYourJourney": "Start Your Journey",
+    "jobPlacement": "Jobs Placement",
+    "successRate": "Success Rate",
+    "averageResponse": "Average Response",
+    "whatOurClientsSay": "What Our Clients Say",
+    "whatOurClientsSayDesc": "Hear from professionals who found success with our platform.",
+    "clientTestimonials": [
+      {
+        "name": "John Doe",
+        "position": "Software Engineer",
+        "testimonial": "I found my dream job through this platform. The process was smooth and the support was excellent."
+      },
+      {
+        "name": "Jane Smith",
+        "position": "Marketing Manager",
+        "testimonial": "The team helped me every step of the way. I highly recommend their services!"
+      }
+    ]
+
   },
   "gr": {
     "title": "Εύρεση Εργασίας στην Κύπρο",
@@ -57,7 +94,44 @@
     "redirectMessage": "Επιστροφή στην αρχική σελίδα σε {countdown}...",
     "submissionFailed": "Η υποβολή απέτυχε",
     "submissionFailedMessage": "Η υποβολή της αίτησης απέτυχε. Παρακαλώ προσπαθήστε ξανά.",
-    "tryAgain": "Προσπαθήστε ξανά"
+    "tryAgain": "Προσπαθήστε ξανά",
+    "benefits": "Οφέλη",
+    "benefitsDesc": "Ανταγωνιστικός μισθός και ολοκληρωμένο πακέτο παροχών.",
+    "flexibility": "Ευελιξία",
+    "flexibilityDesc": "Ευέλικτες ώρες εργασίας και επιλογές απομακρυσμένης εργασίας.",
+    "growth": "Ανάπτυξη",
+    "growthDesc": "Ευκαιρίες επαγγελματικής ανέλιξης και ανάπτυξης δεξιοτήτων.",
+    "mission": "Αποστολή μας",
+    "missionDesc": "Συνδέουμε ταλαντούχους επαγγελματίες με εταιρείες που εκτιμούν τις δεξιότητές τους και την εμπειρία τους.",
+    "team": "Η ομάδα μας",
+    "teamDesc": "Η έμπειρη ομάδα μας από ειδικούς σε προσλήψεις είναι αφοσιωμένη στο να βρίσκει την ιδανική αντιστοίχιση μεταξύ εργοδοτών και υποψηφίων.",
+    "presence": "Παρουσία μας",
+    "presenceDesc": "Με γραφεία σε όλη την Κύπρο και συνεργασίες με κορυφαίες εταιρείες, προσφέρουμε ανεπανάληπτη πρόσβαση σε ευκαιρίες εργασίας.",
+    "aboutUs": "Σχετικά με εμάς",
+    "aboutExtraInfo": "Ιδρύθηκε το 2020, η πλατφόρμα μας έχει βοηθήσει χιλιάδες επαγγελματίες να βρουν την εργασία των ονείρων τους σε διάφορους κλάδους. Υποστηριζόμαστε στην εξατομικευμένη εξυπηρέτηση, κατανοώντας τις ανάγκες των εργοδοτών και τις φιλοδοξίες των υποψηφίων.",
+    "whyChooseUs": "Γιατί να μας επιλέξετε",
+    "whyChooseDesc": "Δεσμευόμαστε να παρέχουμε την καλύτερη εμπειρία αναζήτησης εργασίας, με έμφαση στην ποιότητα, την αποτελεσματικότητα και την εξατομικευμένη υποστήριξη.",
+    "joinThousands": "Εγγραφείτε σε Χιλιάδες Ιστορίες Επιτυχίας",
+    "joinThousandsDesc": "Η καριέρα των ονείρων σας είναι μόλις ένα κλικ μακριά",
+    "startYourJourney": "Ξεκινήστε το Ταξίδι σας",
+    "jobPlacement": "Θέσεις Εργασίας",
+    "successRate": "Ποσοστό Επιτυχίας",
+    "averageResponse": "Μέση Αντίκτυπος",
+    "whatOurClientsSay": "Τι Λένε οι Πελάτες μας",
+    "whatOurClientsSayDesc": "Ακούστε από επαγγελματίες που βρήκαν επιτυχία με την πλατφόρμα μας.",
+    "clientTestimonials": [
+      {
+        "name": "Γιάννης Παπαδόπουλος",
+        "position": "Μηχανικός Λογισμικού",
+        "testimonial": "Βρήκα τη δουλειά των ονείρων μου μέσω αυτής της πλατφόρμας. Η διαδικασία ήταν ομαλή και η υποστήριξη εξαιρετική."
+      },
+      {
+        "name": "Μαρία Ιωάννου",
+        "position": "Διευθύντρια Μάρκετινγκ",
+        "testimonial": "Η ομάδα με βοήθησε σε κάθε βήμα. Συνιστώ ανεπιφύλακτα τις υπηρεσίες τους!"
+      }
+    ]
+    
   },
   "ru": {
     "title": "Поиск работы на Кипре",
@@ -87,7 +161,44 @@
     "redirectMessage": "Перенаправление на главную страницу через {countdown}...",
     "submissionFailed": "Ошибка отправки заявки",
     "submissionFailedMessage": "Не удалось отправить заявку. Пожалуйста, попробуйте снова.",
-    "tryAgain": "Попробуйте снова"
+    "tryAgain": "Попробуйте снова",
+    "benefits": "Преимущества",
+    "benefitsDesc": "Конкурентная зарплата и комплексный пакет льгот.",
+    "flexibility": "Гибкость",
+    "flexibilityDesc": "Гибкий график работы и возможность удаленной работы.",
+    "growth": "Рост",
+    "growthDesc": "Возможности карьерного роста и профессионального развития.",
+    "mission": "Наша миссия",
+    "missionDesc": "Мы соединяем талантливых профессионалов с компаниями, которые ценят их навыки и опыт.",
+    "team": "Наша команда",
+    "teamDesc": "Наша опытная команда специалистов по подбору персонала стремится найти идеальное соответствие между работодателями и соискателями.",
+    "presence": "Наше присутствие",
+    "presenceDesc": "С офисами по всему Кипру и партнерствами с ведущими компаниями, мы предлагаем непревзойденный доступ к вакансиям.",
+    "aboutUs": "О нас",
+    "aboutExtraInfo": "Основанная в 2020 году, наша платформа помогла тысячам профессионалов найти работу своей мечты в различных отраслях. Мы гордимся индивидуальным подходом, понимая как потребности работодателей, так и стремления кандидатов.",
+    "whyChooseUs": "Почему выбирают нас",
+    "whyChooseDesc": "Мы стремимся предоставить лучший опыт поиска работы, сосредоточив внимание на качестве, эффективности и персонализированной поддержке.",
+    "joinThousands": "Присоединяйтесь к тысячам успешных историй",
+    "joinThousandsDesc": "Ваша карьера мечты всего в одном клике",
+    "startYourJourney": "Начните свое путешествие",
+    "jobPlacement": "Размещенные вакансии",
+    "successRate": "Уровень успеха",
+    "averageResponse": "Средний отклик",
+    "whatOurClientsSay": "Что говорят наши клиенты",
+    "whatOurClientsSayDesc": "Узнайте мнение профессионалов, которые добились успеха с нашей платформой.",
+    "clientTestimonials": [
+      {
+        "name": "Иван Иванов",
+        "position": "Программист",
+        "testimonial": "Я нашел работу своей мечты через эту платформу. Процесс был гладким, а поддержка отличной."
+      },
+      {
+        "name": "Мария Петрова",
+        "position": "Менеджер по маркетингу",
+        "testimonial": "Команда помогла мне на каждом этапе. Я настоятельно рекомендую их услуги!"
+      }
+    ]
+
   },
   "es": {
     "title": "Buscador de Empleo en Chipre",
@@ -117,7 +228,44 @@
     "redirectMessage": "Redirigiendo a la página de inicio en {countdown}...",
     "submissionFailed": "Error en el envío",
     "submissionFailedMessage": "No se pudo enviar la solicitud. Por favor, inténtalo de nuevo.",
-    "tryAgain": "Intentar de nuevo"
+    "tryAgain": "Intentar de nuevo",
+    "benefits": "Beneficios",
+    "benefitsDesc": "Salario competitivo y paquete integral de beneficios.",
+    "flexibility": "Flexibilidad",
+    "flexibilityDesc": "Horarios de trabajo flexibles y opciones de trabajo remoto.",
+    "growth": "Crecimiento",
+    "growthDesc": "Oportunidades de avance profesional y desarrollo de habilidades.",
+    "mission": "Nuestra Misión",
+    "missionDesc": "Conectamos a profesionales talentosos con empresas que valoran sus habilidades y experiencia.",
+    "team": "Nuestro Equipo",
+    "teamDesc": "Nuestro experimentado equipo de especialistas en reclutamiento se dedica a encontrar la combinación perfecta entre empleadores y candidatos.",
+    "presence": "Nuestra Presencia",
+    "presenceDesc": "Con oficinas en todo Chipre y asociaciones con empresas líderes, ofrecemos un acceso inigualable a oportunidades laborales.",
+    "aboutUs": "Sobre Nosotros",
+    "aboutExtraInfo": "Fundada en 2020, nuestra plataforma ha ayudado a miles de profesionales a encontrar el trabajo de sus sueños en diversas industrias. Nos enorgullece nuestro servicio personalizado, entendiendo tanto las necesidades de los empleadores como las aspiraciones de los candidatos.",
+    "whyChooseUs": "Por qué elegirnos",
+    "whyChooseDesc": "Estamos comprometidos a proporcionar la mejor experiencia de búsqueda de empleo, con un enfoque en la calidad, la eficiencia y el apoyo personalizado.",
+    "joinThousands": "Únete a Miles de Historias de Éxito",
+    "joinThousandsDesc": "Tu carrera soñada está a solo un clic de distancia",
+    "startYourJourney": "Comienza tu viaje",
+    "jobPlacement": "Empleos Publicados",
+    "successRate": "Tasa de Éxito",
+    "averageResponse": "Respuesta Promedio",
+    "whatOurClientsSay": "Lo Que Dicen Nuestros Clientes",
+    "whatOurClientsSayDesc": "Escucha a profesionales que encontraron éxito con nuestra plataforma.",
+    "clientTestimonials": [
+      {
+        "name": "Juan Pérez",
+        "position": "Ingeniero de Software",
+        "testimonial": "Encontré el trabajo de mis sueños a través de esta plataforma. El proceso fue fluido y el apoyo fue excelente."
+      },
+      {
+        "name": "María López",
+        "position": "Gerente de Marketing",
+        "testimonial": "El equipo me ayudó en cada paso del camino. ¡Recomiendo encarecidamente sus servicios!"
+      }
+    ]
+
   },
   "fr": {
     "title": "Job Finder Chypre",
@@ -147,6 +295,42 @@
     "redirectMessage": "Redirection vers l'accueil dans {countdown}...",
     "submissionFailed": "Échec de l'envoi",
     "submissionFailedMessage": "L'envoi de la candidature a échoué. Veuillez réessayer.",
-    "tryAgain": "Réessayer"
+    "tryAgain": "Réessayer",
+    "benefits": "Avantages",
+    "benefitsDesc": "Salaire compétitif et package complet d'avantages.",
+    "flexibility": "Flexibilité",
+    "flexibilityDesc": "Horaires de travail flexibles et options de télétravail.",
+    "growth": "Croissance",
+    "growthDesc": "Opportunités d'avancement professionnel et développement de compétences.",
+    "mission": "Notre Mission",
+    "missionDesc": "Nous mettons en relation des professionnels talentueux avec des entreprises qui valorisent leurs compétences et leur expertise.",
+    "team": "Notre Équipe",
+    "teamDesc": "Notre équipe expérimentée de spécialistes en recrutement s'engage à trouver la combinaison parfaite entre employeurs et candidats.",
+    "presence": "Notre Présence",
+    "presenceDesc": "Avec des bureaux à travers Chypre et des partenariats avec des entreprises de premier plan, nous offrons un accès inégalé aux opportunités d'emploi.",
+    "aboutUs": "À propos de nous",
+    "aboutExtraInfo": "Fondée en 2020, notre plateforme a aidé des milliers de professionnels à trouver l'emploi de leurs rêves dans divers secteurs. Nous sommes fiers de notre service personnalisé, en comprenant à la fois les besoins des employeurs et les aspirations des candidats.",
+    "whyChooseUs": "Pourquoi nous choisir",
+    "whyChooseDesc": "Nous nous engageons à fournir la meilleure expérience de recherche d'emploi, en mettant l'accent sur la qualité, l'efficacité et le soutien personnalisé.",
+    "joinThousands": "Rejoignez des milliers d'histoires de réussite",
+    "joinThousandsDesc": "Votre carrière de rêve n'est qu'à un clic",
+    "startYourJourney": "Commencez votre voyage",
+    "jobPlacement": "Emplois publiés",
+    "successRate": "Taux de réussite",
+    "averageResponse": "Réponse moyenne",
+    "whatOurClientsSay": "Ce que disent nos clients",
+    "whatOurClientsSayDesc": "Écoutez des professionnels qui ont trouvé le succès grâce à notre plateforme.",
+    "clientTestimonials": [
+      {
+        "name": "Jean Dupont",
+        "position": "Ingénieur Logiciel",
+        "testimonial": "J'ai trouvé l'emploi de mes rêves grâce à cette plateforme. Le processus a été fluide et le soutien excellent."
+      },
+      {
+        "name": "Marie Curie",
+        "position": "Responsable Marketing",
+        "testimonial": "L'équipe m'a aidé à chaque étape. Je recommande vivement"
+      }
+    ]
   }
 }

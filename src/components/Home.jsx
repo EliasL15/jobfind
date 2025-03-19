@@ -1,27 +1,35 @@
 import React from 'react';
+import Hero from './Hero';
+import Features from './Features';
+import Testimonials from './Testimonials';
+import CallToAction from './CallToAction';
 
 const Home = ({ language, translations, onApplyNow, onLearnMore }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg border border-gray-100 p-8 max-w-3xl mx-auto">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">
-        {translations[language].findDreamJob}
-      </h2>
-      <p className="text-gray-600 mb-6">
-        {translations[language].description}
-      </p>
-      <div className="flex flex-col sm:flex-row gap-8">
-        <button
-          onClick={onApplyNow}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg shadow-sm transition-all duration-200"
-        >
-          {translations[language].applyNow}
-        </button>
-        <button
-          onClick={onLearnMore}
-          className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-lg shadow-sm transition-all duration-200"
-        >
-          {translations[language].learnMore}
-        </button>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="space-y-24 scroll-smooth">
+          <section className="transform transition-all duration-500 hover:scale-[1.01]">
+            <Hero
+              language={language}
+              translations={translations}
+              onApplyNow={onApplyNow}
+              onLearnMore={onLearnMore}
+            />
+          <section className="transform transition-all duration-500 hover:scale-[1.01]">
+            <Features language={language} translations={translations} />
+          </section>
+
+          </section>
+          
+          <section className="transform transition-all duration-500 hover:scale-[1.01]">
+            <CallToAction language={language} translations={translations} onApplyNow={onApplyNow} />
+          </section>
+          
+          <section className="transform transition-all duration-500 hover:scale-[1.01]">
+            <Testimonials language={language} translations={translations}/>
+          </section>
+        </div>
       </div>
     </div>
   );

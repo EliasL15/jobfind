@@ -32,7 +32,7 @@ const JobForm = ({ language, translations, formData, onInputChange, onBackToHome
 
 
     try {
-      const response = await fetch('/submit', {
+      const response = await fetch('./submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -146,14 +146,14 @@ const JobForm = ({ language, translations, formData, onInputChange, onBackToHome
           <div className="mt-8 flex gap-4">
             <button
               type="button"
+              className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-2 px-6 rounded-lg shadow-sm transition-all duration-200"
               onClick={onBackToHome}
-              className="w-full md:w-auto bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-8 rounded-lg shadow-sm transition-all duration-200"
-            >
+              >
               {translations[language].backToHome}
             </button>
             <button
               type="submit"
-              className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg shadow-sm transition-all duration-200"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg shadow-sm transition-all duration-200"
             >
               {translations[language].submit}
             </button>
